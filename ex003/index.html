@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário do funcionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulario">
+        <div class="campo">
+            <label for="nome-funcionario">Nome do funcionário:</label>
+            <input type="text" name="nome_funcionario" id="nome-funcionario" pattern="[A-Za-zÀ-ÿ\s]+" title="Apenas letras!">
+        </div>
+        <div class="campo">
+            <label for="salario-funcionario">Salário:</label>
+            <input type="number" name="salario_funcionario" id="salario-funcionario" step="0.01">
+            <input type="submit" value="Enviar" id="botao-enviar">
+        </div>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
